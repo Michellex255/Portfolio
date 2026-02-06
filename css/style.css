@@ -1,0 +1,160 @@
+:root {
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --emerald: #00674f;
+  --gold: #d3af37;
+  --burgundy: #723b3d;
+  --beige: #d1c7bd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Abhaya Libre,
+    Georgia,
+    serif;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.6;
+}
+
+.vertical-text {
+  font-family:
+    Abhaya Libre,
+    Georgia,
+    serif;
+  font-weight: 800;
+}
+
+nav {
+  background-color: var(--white);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--black);
+  text-decoration: none;
+  margin-left: 0rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.nav-menu a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--emerald);
+}
+
+.hero {
+  margin-top: 80px;
+  min-height: 100vh;
+}
+
+.hero-left {
+  background-color: var(--black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+  gap: 0.25rem;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  font-size: 6rem;
+  color: var(--white);
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  transform: rotate(180deg);
+}
+
+.gold-line {
+  width: 1px;
+  height: 500px;
+  background-color: var(--gold);
+  margin: 1.5rem 0;
+}
+.subtitle {
+  writing-mode: vertical-lr;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--emerald);
+  margin: 0;
+  transform: rotate(180deg);
+}
+
+.hero-right {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem 6rem 4rem 8rem;
+  padding-left: 4rem;
+  min-height: 100vh;
+}
+
+.hero-right h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+.btn-primary {
+  background-color: var(--emerald);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--burgundy);
+}
