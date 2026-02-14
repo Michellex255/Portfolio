@@ -164,3 +164,77 @@ nav {
 .btn-primary:hover {
   background-color: var(--burgundy);
 }
+
+.projects {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+
+.section-title {
+  font-size: 56px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.project-item {
+  margin-bottom: 100px;
+}
+
+.project-image {
+  width: 100%;
+  height: 400px;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-placeholder {
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+
+.project-content {
+  padding: 0 40px;
+}
+
+.project-content h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.project-content p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.project-link {
+  display: inline-block;
+  color: var(--emerald);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--emerald);
+  padding-bottom: 4px;
+  transition: all 0.3s;
+}
+
+.project-link:hover {
+  color: var(--burgundy);
+  border-bottom-color: var(--burgundy);
+}
