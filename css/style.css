@@ -208,6 +208,7 @@ nav {
   margin-bottom: 24px;
   line-height: 1.2;
   text-align: center;
+  padding-top: 80px;
 }
 
 .tagline {
@@ -215,7 +216,9 @@ nav {
   color: #666;
   margin-bottom: 40px;
   max-width: 600px;
+  padding-top: 30px;
 }
+
 .btn-primary {
   background-color: var(--emerald);
   color: var(--white);
@@ -225,6 +228,7 @@ nav {
   font-size: 17.6px;
   font-weight: 600;
   transition: background-color 0.3s;
+  margin-top: 20px;
 }
 
 .btn-primary:hover {
@@ -307,14 +311,14 @@ nav {
 .footer {
   background-color: var(--black);
   color: var(--white);
-  padding: 30px 0 20px; 
-  margin-top: 60px;
+  padding: 30px 0 20px;
+  margin-top: 0px;
 }
 
 .footer-email {
   display: inline-block;
   color: var(--gold);
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 2px solid var(--gold);
