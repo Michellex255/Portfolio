@@ -267,6 +267,7 @@ nav {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 1.5px solid var(--black);
 }
 
 .project-placeholder {
