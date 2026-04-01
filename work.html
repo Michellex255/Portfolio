@@ -3,119 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="My Work - Michelle de Villiers | Front-End Developer"
-    />
-    <title>My Work | Michelle de Villiers</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+ 
+    <!-- PRIMARY META -->
+    <title>My Work | Michelle de Villiers | Nova Web Studio</title>
+    <meta name="title" content="My Work | Michelle de Villiers | Nova Web Studio" />
+    <meta name="description" content="Portfolio of web development projects by Michelle de Villiers — including Bustin Chops e-commerce site, AI Did You Know Generator, Croissant Website, and more." />
+    <meta name="keywords" content="web development portfolio, front-end projects, HTML CSS JavaScript projects, React projects, Nova Web Studio portfolio, Michelle de Villiers work" />
+    <meta name="author" content="Michelle de Villiers" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://novawebstudio.io/work.html" />
+ 
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://novawebstudio.io/work.html" />
+    <meta property="og:title" content="My Work | Michelle de Villiers | Nova Web Studio" />
+    <meta property="og:description" content="Web development projects including e-commerce, AI tools and responsive websites." />
+    <meta property="og:image" content="https://novawebstudio.io/images/bustin-chops.jpg" />
+    <meta property="og:site_name" content="Nova Web Studio" />
+ 
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Work | Michelle de Villiers | Nova Web Studio" />
+    <meta name="twitter:description" content="Web development projects including e-commerce, AI tools and responsive websites." />
+    <meta name="twitter:image" content="https://novawebstudio.io/images/bustin-chops.jpg" />
+ 
+    <meta name="theme-color" content="#1a1a1a" />
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      .work-page {
-        padding: 100px 0 80px;
-        min-height: 100vh;
-        background: var(--white);
-      }
-      .work-page .page-title {
-        font-size: 56px;
-        font-weight: 800;
-        text-align: center;
-        color: var(--black);
-        margin-bottom: 0;
-      }
-      .work-title-line {
-        width: 300px;
-        height: 1px;
-        background: var(--gold);
-        margin: 12px auto 60px;
-      }
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 36px;
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 0 24px;
-      }
-      .project-card {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .project-thumb {
-        width: 100%;
-        aspect-ratio: 4/3;
-        border-radius: 8px;
-        overflow: hidden;
-        background: #e8e4df;
-        margin-bottom: 12px;
-        border: 1px solid #e0d8d0;
-      }
-      .project-thumb img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.4s ease;
-        display: block;
-      }
-      .project-card:hover .project-thumb img {
-        transform: scale(1.04);
-      }
-      .project-thumb.coming {
-        background: #f0ece8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 36px;
-      }
-      .project-card-title {
-        font-size: 16px;
-        font-weight: 700;
-        color: var(--black);
-        margin-bottom: 4px;
-      }
-      .project-card-link {
-        font-size: 13px;
-        color: var(--emerald);
-        text-decoration: none;
-        font-weight: 600;
-        border-bottom: 1px solid var(--emerald);
-        padding-bottom: 1px;
-        transition: all 0.2s;
-      }
-      .project-card-link:hover {
-        color: var(--burgundy);
-        border-color: var(--burgundy);
-      }
-      .project-card-link.disabled {
-        color: #bbb;
-        border-color: #bbb;
-        pointer-events: none;
-        cursor: default;
-      }
-      @media (max-width: 768px) {
-        .projects-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      @media (max-width: 480px) {
-        .projects-grid {
-          grid-template-columns: 1fr;
-        }
-      }
+      .work-page { padding: 100px 0 80px; min-height: 100vh; background: var(--white); }
+      .work-page .page-title { font-size: 56px; font-weight: 800; text-align: center; color: var(--black); margin-bottom: 0; }
+      .work-title-line { width: 300px; height: 1px; background: var(--gold); margin: 12px auto 60px; }
+      .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; max-width: 960px; margin: 0 auto; padding: 0 24px; }
+      .project-card { display: flex; flex-direction: column; align-items: flex-start; }
+      .project-thumb { width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden; background: #e8e4df; margin-bottom: 12px; border: 1px solid #e0d8d0; }
+      .project-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+      .project-card:hover .project-thumb img { transform: scale(1.04); }
+      .project-thumb.coming { background: #f0ece8; display: flex; align-items: center; justify-content: center; font-size: 36px; }
+      .project-card-title { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
+      .project-card-link { font-size: 13px; color: var(--emerald); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--emerald); padding-bottom: 1px; transition: all 0.2s; }
+      .project-card-link:hover { color: var(--burgundy); border-color: var(--burgundy); }
+      .project-card-link.disabled { color: #bbb; border-color: #bbb; pointer-events: none; cursor: default; }
+      @media (max-width: 768px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 480px) { .projects-grid { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
@@ -129,82 +64,52 @@
         </ul>
       </div>
     </nav>
-
     <section class="work-page">
       <h1 class="page-title">My Work</h1>
       <div class="work-title-line"></div>
-
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-thumb">
-            <img src="images/bustin-chops.jpg" alt="Bustin' Chops" />
+            <img src="images/bustin-chops.jpg" alt="Bustin Chops - South African biltong e-commerce website" />
           </div>
           <div class="project-card-title">Bustin' Chops</div>
-          <a
-            href="https://bustinchops.netlify.app"
-            target="_blank"
-            class="project-card-link"
-            >View live website →</a
-          >
+          <a href="https://bustinchops.netlify.app" target="_blank" rel="noopener" class="project-card-link">View live website →</a>
         </div>
-
         <div class="project-card">
           <div class="project-thumb">
-            <img
-              src="images/ai-generator-project.jpg"
-              alt="AI Did You Know Generator"
-            />
+            <img src="images/ai-generator-project.jpg" alt="AI Did You Know Generator - JavaScript API integration project" />
           </div>
           <div class="project-card-title">AI Did You Know Generator</div>
-          <a
-            href="https://ai-did-you-know-generator.netlify.app"
-            target="_blank"
-            class="project-card-link"
-            >View live website →</a
-          >
+          <a href="https://ai-did-you-know-generator.netlify.app" target="_blank" rel="noopener" class="project-card-link">View live website →</a>
         </div>
-
         <div class="project-card">
           <div class="project-thumb">
-            <img src="images/croissant-project.jpg" alt="Croissant Website" />
+            <img src="images/croissant-project.jpg" alt="Croissant Website - Multi-page HTML CSS website" />
           </div>
           <div class="project-card-title">Croissant Website</div>
-          <a
-            href="https://delightful-douhua-c61f9a.netlify.app/"
-            target="_blank"
-            class="project-card-link"
-            >View live website →</a
-          >
+          <a href="https://delightful-douhua-c61f9a.netlify.app/" target="_blank" rel="noopener" class="project-card-link">View live website →</a>
         </div>
-
         <div class="project-card">
           <div class="project-thumb coming">🌸</div>
           <div class="project-card-title">Her Rhythm</div>
           <span class="project-card-link disabled">Coming soon</span>
         </div>
-
         <div class="project-card">
           <div class="project-thumb coming">📊</div>
           <div class="project-card-title">Tic Tracker</div>
           <span class="project-card-link disabled">Coming soon</span>
         </div>
-
         <div class="project-card">
           <div class="project-thumb coming" style="color: #ccc">+</div>
-          <div class="project-card-title" style="color: #bbb">
-            More coming soon
-          </div>
+          <div class="project-card-title" style="color: #bbb">More coming soon</div>
         </div>
       </div>
     </section>
-
     <footer class="footer">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 footer-left">
-            <a href="mailto:info@novawebstudio.io" class="footer-email"
-              >info@novawebstudio.io</a
-            >
+            <a href="mailto:info@novawebstudio.io" class="footer-email">info@novawebstudio.io</a>
           </div>
           <div class="col-md-6 footer-right">
             <div class="footer-links">
@@ -213,21 +118,9 @@
               <a href="contact.html">Contact</a>
             </div>
             <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/michelle-de-villiers-696560128"
-                target="_blank"
-                aria-label="LinkedIn"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/Michellex255"
-                target="_blank"
-                aria-label="GitHub"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="mailto:info@novawebstudio.io" aria-label="Email"
-                ><i class="fas fa-envelope"></i
-              ></a>
+              <a href="https://www.linkedin.com/in/michelle-de-villiers-696560128" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Michellex255" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="mailto:info@novawebstudio.io" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>
